@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: dreka-cli
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:8888/
+      enabled: true
+      fail-fast: true
+server:
+  port: 8082
+eureka:
+  client:
+    fetchRegistry: false
+    service-url:
+      # nowork?
+      defaultZone: http://localhost:8761/eureka/
+    eureka-server-port: 8761
